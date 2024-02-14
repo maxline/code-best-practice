@@ -7,8 +7,13 @@ import static java.util.stream.Collectors.joining;
 
 /**
  * https://www.baeldung.com/java-strings-concatenation
+ * https://www.baeldung.com/java-string-concatenation-methods
+ * 
  * Speed comparison of string joining practices:
  * <a href="https://medium.com/javarevisited/5-effective-string-practices-you-should-know-e9a75811b123">...</a>
+ * What can we conclude? String.concat is the best option for two strings join. 
+ * This way we don’t create additional StringBuilder or StringBuffer. 
+ * Even thoughString.concat isn't the fastest, it beats other options in throughput.
  */
 public class StringJoinUtil {
     /**
